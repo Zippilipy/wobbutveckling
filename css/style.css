@@ -1,0 +1,53 @@
+.nav {
+    height: 20%;
+}
+.navdiv > a > div{
+    background-size:  contain;
+    height: 100%;
+}
+.logodiv{
+    height: calc(50% - 0.5rem);
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+
+}
+.logoimg{
+    height: 100%;
+}
+.navdiv{
+    display: flex;
+    height: calc(50% - 0.5rem);
+}
+.navdiv > a{
+    flex: 25%;
+}
+.navdiv > a:hover{
+    background-color: rgba(128, 128, 128, 0.5);
+}
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    position: absolute;
+    display: block;
+    box-shadow: 3px 0 2px 0 rgba(0,0,0,0.3);
+    z-index: 1;
+    transition: height 0.25s;
+}
+.navdiv > a > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navdiv > a > div > p{
+    text-align: center;
+    height: fit-content;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+}
