@@ -1,5 +1,4 @@
-    </div>
-        <footer>
+ <footer>
             <p>någon text</p>
         </footer>
     </body>
