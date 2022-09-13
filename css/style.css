@@ -13,7 +13,6 @@
     height: 100%;
 }
 .topdiv{
-    height: calc(50% - 0.5rem);
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
@@ -149,25 +148,35 @@ span.psw {
         display: block;
         float: none;
     }
+
     .cancelbtn {
         width: 100%;
     }
 }
-.homebutton{
+
+.homebutton {
     display: flex;
     align-items: center;
     padding: 1rem;
 }
-.navdiv{
+
+.navdiv {
     display: flex;
-    height: calc(50% - 0.5rem);
+    height: 10%;
 }
-.navdiv > a{
+
+.registerh2 {
+    text-align: center;
+}
+
+.navdiv > a {
     flex: 25%;
 }
-.navdiv > a:hover{
+
+.navdiv > a:hover {
     background-color: rgba(128, 128, 128, 0.5);
 }
+
 .sidebar {
     margin: 0;
     padding: 0;
