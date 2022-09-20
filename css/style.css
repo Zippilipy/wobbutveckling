@@ -16,6 +16,7 @@
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .logoimg{
 }
@@ -91,7 +92,7 @@ span.psw {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 2; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -131,29 +132,6 @@ span.psw {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
 }
-
-@-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)}
-    to {-webkit-transform: scale(1)}
-}
-
-@keyframes animatezoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-
-    .cancelbtn {
-        width: 100%;
-    }
-}
-
 .homebutton {
     display: flex;
     align-items: center;
@@ -177,7 +155,7 @@ span.psw {
     background-color: rgba(128, 128, 128, 0.5);
 }
 
-.sidebar {
+.sidebar, .loginorregister {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -198,8 +176,65 @@ span.psw {
     text-align: center;
     height: fit-content;
 }
+.logindiv{
+    display: flex;
+}
+.avatarbutton{
+    margin: 1rem;
+    display: none;
+}
+.loginbutton, .registerbutton{
+    display: none;
+}
 
 footer {
     text-align: center;
     padding: 2rem;
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1020px) {
+    .logotext2, .logotext3{
+        display: none;
+    }
+    .logindiv > button{
+        padding: 7px 10px;
+        font-size: 16px;
+    }
+    .avatarbutton{
+        display: block;
+    }
+    .logindiv > button{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .logotext2, .logotext3{
+        display: none;
+    }
+    .logindiv > button{
+        padding: 7px 10px;
+        font-size: 16px;
+    }
+
 }

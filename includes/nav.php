@@ -3,8 +3,7 @@
         <!--<a href="#" class="homebutton"><img class="logoimg" src="assets/oie_0XS8ZpJxNDWx75.png"></a>-->
         <a class="homebutton" href="#"><h2 class="logotext1">Framtiden Inc.</h2><h2 class="logotext2">⋒</h2><h2 class="logotext3">Framtiden är imorgon, sov tills dess.</h2></a>
         <!-- Button to open the modal login form -->
-        <div class="logindiv"><button onclick="document.getElementById('id02').style.display='block'" style="width: auto; margin: 1rem;">Register</button><button onclick="document.getElementById('id01').style.display='block'" style="width: auto; margin: 1rem;">Login</button></div>
-
+        <div class="logindiv"><img onclick="toggleLogIn()"class="avatarbutton" src="assets/th-3077032434.jpg" height="20px"><button onclick="document.getElementById('id02').style.display='block'" style="width: auto; margin: 1rem;">Register</button><button onclick="document.getElementById('id01').style.display='block'" style="width: auto; margin: 1rem;">Login</button></div>
         <!-- The Modal -->
         <div id="id02" class="modal">
   <span onclick="document.getElementById('id02').style.display='none'"
@@ -66,6 +65,7 @@
             </div>
         </form>
     </div>
+    <div class="loginorregister" id="loginorRegister" style="height: 15%; display: none;"><button class="loginbutton" onclick="document.getElementById('id01').style.display='block'" style="width: auto; margin: 1rem;">Login</button><button class="registerbutton"onclick="document.getElementById('id02').style.display='block'" style="width: auto; margin: 1rem;">Register</button></div>
     <div class="navdiv">
         <a href="">
             <div><p>1</p></div>

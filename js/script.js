@@ -1,5 +1,8 @@
 let navdiv = document.querySelector(".navdiv")
 let sideBar = document.querySelector("#sideBar")
+let loginorregister = document.querySelector("#loginorRegister")
+let loginbutton = document.querySelector(".loginbutton")
+let registerbutton = document.querySelector(".registerbutton")
 
 navdiv.addEventListener("mouseenter", toggleDropdown)
 navdiv.addEventListener("mouseleave", toggleDropdown)
@@ -15,6 +18,19 @@ function toggleDropdown() {
     } else {
         dropdown.style.height = "30%";
         dropdown.style.display = "block";
+    }
+}
+
+function toggleLogIn(){
+    if (loginorregister.style.display === "block") {
+        loginorregister.style.display = "none";
+        loginbutton.style.display = "none";
+        registerbutton.style.display = "none";
+    } else {
+        loginorregister.style.display = "block";
+        loginorregister.style.display = "block";
+        loginbutton.style.display = "inline-block";
+        registerbutton.style.display = "inline-block";
     }
 }
 
