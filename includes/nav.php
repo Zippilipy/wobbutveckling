@@ -10,7 +10,7 @@
         class="close" title="Close Modal">&times;</span>
 
             <!-- Modal Content -->
-            <form class="modal-content animate" method="post" action="/action_page.php">
+            <form class="modal-content animate" action="includes/signup.inc.php" method="post">
 
                 <div class="container">
                     <h2 class="registerh2">Register</h2>
@@ -26,7 +26,7 @@
                     <label for="confpsw"><b>Confirm password</b></label>
                     <input type="password" placeholder="Enter Password" name="confpsw" required>
 
-                    <button type="submit">Register</button>
+                    <button type="submit" name="submit">Register</button>
                 </div>
 
                 <div class="container" style="background-color:#f1f1f1">
@@ -41,19 +41,19 @@
         class="close" title="Close Modal">&times;</span>
 
         <!-- Modal Content -->
-        <form class="modal-content animate" action="/action_page.php">
+        <form class="modal-content animate" action="includes/login.inc.php" method="post">
             <div class="imgcontainer">
                 <img src="img_avatar2.png" alt="Avatar" class="avatar">
             </div>
 
             <div class="container">
-                <label for="loginname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="loginname" required>
+                <label for="loginemail"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="loginemail" required>
 
                 <label for="loginpsw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="loginpsw" required>
 
-                <button type="submit">Login</button>
+                <button type="submit" name="submit">Login</button>
                 <label>
                     <input type="checkbox" checked="checked" name="remember"> Remember me
                 </label>
